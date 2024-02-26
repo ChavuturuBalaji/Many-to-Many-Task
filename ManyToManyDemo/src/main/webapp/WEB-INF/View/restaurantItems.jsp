@@ -29,9 +29,7 @@
         <th>Name</th>
         <th>Category</th>
         <th>Cuisine</th>
-        <th>Add New Restaurant</th>
-        <th>Add Exist Restaurant</th>
-        <th>Update Item Details</th>
+        <th>Remove item</th>
     </tr>
     <c:forEach var="item" items="${items}">
         <tr>
