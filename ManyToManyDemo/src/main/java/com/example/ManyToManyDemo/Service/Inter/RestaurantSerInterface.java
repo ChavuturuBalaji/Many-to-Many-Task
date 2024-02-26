@@ -13,4 +13,6 @@ public interface RestaurantSerInterface {
     public List<ItemsModel> viewItems();
     public void deleteRestaurant(int id);
     public List<ItemsModel> viewRestaurantItems(int id);
+    public void itemRemove(int restaurantID, int itemID);
+
 }
