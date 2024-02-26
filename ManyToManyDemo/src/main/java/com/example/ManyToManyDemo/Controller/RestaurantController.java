@@ -86,7 +86,6 @@ public class RestaurantController {
     @GetMapping("/itemRemove")
     public String itemRemove(@RequestParam("itemId") int itemId){
         restaurantSer.itemRemove(restaurantID,itemId);
-        return "redirect:/viewItems";
-
+        return "redirect:/restaurant/viewItems?restaurantId=" + restaurantID;
     }
 }
