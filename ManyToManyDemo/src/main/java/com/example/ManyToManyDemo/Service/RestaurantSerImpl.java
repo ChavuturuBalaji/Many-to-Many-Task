@@ -121,12 +121,12 @@ public class RestaurantSerImpl implements RestaurantSerInterface {
     }
 
 
+    @Override
     public void itemRemove(int restaurantID, int itemID){
         RestaurantEntity restaurantEntity = restaurantRepository.findById(restaurantID).get();
         ItemsEntity itemsEntity = itemsRepo.findById(itemID).get();
         restaurantEntity.getItems().remove(itemsEntity);
-//        Set<ItemsEntity> itemsEntities = restaurantEntity.getItems();
-//        itemsEntities.remove(itemsEntity);
+        restaurantRepository.save(restaurantEntity);
     }
 }
 
