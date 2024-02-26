@@ -44,7 +44,7 @@
         <th>Add New Restaurant</th>
         <th>Add Exist Restaurant</th>
         <th>View Restaurants</th>
-        <th>Update Item Details</th>
+        <th>Delete</th>
     </tr>
     <c:forEach var="item" items="${items}">
         <tr>
